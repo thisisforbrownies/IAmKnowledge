@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "snow";
+  src: url("whitepoison.ttf");
+}
+body {
+	font-family: snow,Arial;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+}
+
+h1 {
+	text-align: center;
+	font-size: 10em;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: #000000;
+	text-shadow: 2px 2px 5px #fff58f;
+}
+
+.snowfall {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+	background: transparent url('https://i0.wp.com/codemyui.com/wp-content/uploads/2016/11/pure-css-snow-animation.gif?fit=880%2C440&ssl=1') repeat center center;
+	filter: blur(2px);
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+p {
+	font-size: 2.5em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: 	#fff58f;
+	text-shadow: 2px 2px 5px black;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	font-family: snow,Arial;
+	font-size: 2em;
+	padding: 5px;
+	margin-top: 30px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+button {
+	font-family: snow,Arial;
+	font-size: 2em;
+	padding: 5px 10px;
+	text-align: center;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	border: none;
+	color: #000000;
+	cursor: pointer;
+	border-radius: 8px solid black;
+
+}
+
+button:hover {
+	font-family: snow,Arial;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 2em;
+	border-radius: 8px solid white;
+	text-align: center;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.snowflake {
+	position: absolute;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+	0% {
+		transform: translateY(-10%);
+	}
+	100% {
+		transform: translateY(110%);
+	}
+}
